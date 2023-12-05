@@ -9,13 +9,13 @@ x-logging: &default-logging
 
 services:
   grafana:
-    image: grafana/grafana:${GRAFANA_VERSION:-10.1.5}
+    image: grafana/grafana:${GRAFANA_VERSION:-10.2.2}
     container_name: grafana
     restart: unless-stopped
     environment:
       - GF_AUTH_ANONYMOUS_ENABLED=true
       - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
-      - GF_USERS_DEFAULT_THEME=light
+      - GF_USERS_DEFAULT_THEME=dark
       - GF_LOG_MODE=console
       - GF_LOG_LEVEL=critical
       - GF_PANELS_ENABLE_ALPHA=true
