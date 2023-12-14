@@ -48,8 +48,8 @@ receivers:
     opsgenie_configs:
       - send_resolved: true
         http_config: {}
-        api_key: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-        api_url: https://api.eu.opsgenie.com/
+        api_key: ATATT3xFfGF0JeKDyUE466qMBid5ZX3GPNLFc3sf_sEUNAaIAt6WxybscaN3fjlbsP6LEcYu53o3ggUARB-_7_MIvl4crQvHVtu-HEJVayhGproNepyifOh0ryFHLPdO9TNUlY8_-VcCR51poEZ3utDN1PdhAlpcJYndr_du4S1ERY1bvqEvW3U=846D2C82
+        api_url: https://ranchu.app.opsgenie.com/
         message: '[{{ .Status | toUpper }}] {{ .CommonAnnotations.summary }}'
         description: "{{ .CommonAnnotations.description }}\nMore Info:\n- Impact: {{ .CommonAnnotations.impact }}\n- Action: {{ .CommonAnnotations.action }}\n- Dashboard: {{ .CommonAnnotations.dashboard }}\n- Runbook: {{ .CommonAnnotations.runbook }}"
         source: '{{ template "opsgenie.default.source" . }}'

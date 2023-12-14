@@ -1,7 +1,7 @@
-# Docker Monitoring Stack - GPNC
+# Docker Monitoring Stack
 
 ## Overview: 
-  Docker Monitoring Stack utilizing Grafana, Prometheus, Node-Exporter, and cAdvisor.
+  Docker Monitoring Stack utilizing Grafana, Prometheus, Node-Exporter, Redis and cAdvisor.
 
 ## Dependencies:
   - [Docker Compose](https://docs.docker.com/compose/install/linux/): Ensure either `docker-compose` or the `compose` plugin is installed.
