@@ -14,5 +14,24 @@
   command: "`docker-compose up -d`"
   verification: "`docker-compose ps`"
 
-# TBC
+## Endpoints
+
+The following endpoints are available:
+
+| Container      | Internal Endpoint         | External Endpoint     |
+| -------------- | ------------------------- |---------------------- |
+| Grafana        | http://grafana:3000       | http://localhost:3000 |
+| Prometheus     | http://prometheus:9090    | http://localhost:9090 |
+| Node-Exporter  | http://node-exporter:9100 | http://localhost:9100 |
+| cAdvisor       | http://cadvisor:8080      | N/A                   |
+| Alertmanager   | http://alertmanager:9093  | http://localhost:9093 |
+
+## Cleanup
+
+To remove the containers using docker compose (or `make clean`):
+
+```bash
+docker-compose down
+```
+
 
